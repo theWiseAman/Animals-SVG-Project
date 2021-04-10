@@ -1,0 +1,383 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+h1 {
+  font-family: "Nunito" sans-serif;
+  text-decoration: underline;
+}
+
+.container {
+  background-color: purple;
+  width: 700px;
+  height: 500px;
+  border-radius: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-row-gap: 1em;
+  grid-column-gap: 1em;
+  padding: 1em;
+}
+
+.container .inner {
+  background: pink;
+  padding: 1em;
+  border-radius: 10px;
+  width: calc(100% - 3em);
+  height: 50%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .inner .baseTile {
+  border: black solid 1px;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  cursor: pointer;
+}
+
+.container .inner .baseTile div {
+  height: 100%;
+  width: 100%;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 1/1/2/2;
+}
+
+.container #image1 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 1/1/2/2;
+}
+
+.container #image1 .cheeks {
+  background-color: lightyellow;
+}
+
+.container #image1 #L {
+  -webkit-clip-path: polygon(45% 95%, 5% 50%, 25% 45%);
+          clip-path: polygon(45% 95%, 5% 50%, 25% 45%);
+}
+
+.container #image1 #R {
+  -webkit-clip-path: polygon(95% 50%, 75% 45%, 55% 95%);
+          clip-path: polygon(95% 50%, 75% 45%, 55% 95%);
+}
+
+.container #image1 .tongueL {
+  background-color: red;
+  -webkit-clip-path: polygon(47.5% 95%, 50% 95%, 50% 100%);
+          clip-path: polygon(47.5% 95%, 50% 95%, 50% 100%);
+}
+
+.container #image1 .tongueR {
+  background-color: red;
+  opacity: 0.7;
+  -webkit-clip-path: polygon(52.5% 95%, 50% 95%, 50% 100%);
+          clip-path: polygon(52.5% 95%, 50% 95%, 50% 100%);
+}
+
+.container #image1 .nose {
+  background-color: black;
+  -webkit-clip-path: polygon(45% 95%, 55% 95%, 50% 85%);
+          clip-path: polygon(45% 95%, 55% 95%, 50% 85%);
+}
+
+.container #image1 .yellow {
+  background-color: #f7f790;
+}
+
+.container #image1 #one {
+  -webkit-clip-path: polygon(45% 95%, 50% 85%, 25% 45%);
+          clip-path: polygon(45% 95%, 50% 85%, 25% 45%);
+}
+
+.container #image1 #two {
+  -webkit-clip-path: polygon(55% 95%, 50% 85%, 75% 45%);
+          clip-path: polygon(55% 95%, 50% 85%, 75% 45%);
+}
+
+.container #image1 #three {
+  -webkit-clip-path: polygon(95% 50%, 77.5% 25%, 75% 45%);
+          clip-path: polygon(95% 50%, 77.5% 25%, 75% 45%);
+}
+
+.container #image1 #four {
+  -webkit-clip-path: polygon(5% 50%, 22.5% 25%, 25% 45%);
+          clip-path: polygon(5% 50%, 22.5% 25%, 25% 45%);
+}
+
+.container #image1 .brown {
+  background-color: brown;
+}
+
+.container #image1 #left {
+  -webkit-clip-path: polygon(50% 55%, 37.5% 65%, 25% 45%);
+          clip-path: polygon(50% 55%, 37.5% 65%, 25% 45%);
+}
+
+.container #image1 #right {
+  -webkit-clip-path: polygon(50% 55%, 62.5% 65%, 75% 45%);
+          clip-path: polygon(50% 55%, 62.5% 65%, 75% 45%);
+}
+
+.container #image1 .noseBaseL {
+  background-color: red;
+  -webkit-clip-path: polygon(50% 55%, 37.5% 65%, 50% 85%);
+          clip-path: polygon(50% 55%, 37.5% 65%, 50% 85%);
+}
+
+.container #image1 .noseBaseR {
+  background-color: orange;
+  -webkit-clip-path: polygon(50% 55%, 62.5% 65%, 50% 85%);
+          clip-path: polygon(50% 55%, 62.5% 65%, 50% 85%);
+}
+
+.container #image1 .foreHeadL {
+  background-color: #a01b1b;
+  -webkit-clip-path: polygon(50% 55%, 50% 7.5%, 42.5% 7.5%, 32.5% 17.5%, 22.5% 25%, 25% 45%);
+          clip-path: polygon(50% 55%, 50% 7.5%, 42.5% 7.5%, 32.5% 17.5%, 22.5% 25%, 25% 45%);
+}
+
+.container #image1 .foreHeadR {
+  background-color: brown;
+  opacity: 0.8;
+  -webkit-clip-path: polygon(50% 55%, 50% 7.5%, 57.5% 7.5%, 67.5% 17.5%, 77.5% 25%, 75% 45%);
+          clip-path: polygon(50% 55%, 50% 7.5%, 57.5% 7.5%, 67.5% 17.5%, 77.5% 25%, 75% 45%);
+}
+
+.container #image1 .earOne {
+  background-color: orangered;
+  z-index: 10;
+}
+
+.container #image1 .earTwo {
+  background-color: maroon;
+  z-index: 2;
+}
+
+.container #image1 .earThree {
+  background-color: #fd652d;
+  z-index: 5;
+}
+
+.container #image1 #left1 {
+  -webkit-clip-path: polygon(42.5% 7.5%, 32.5% 17.5%, 22.5% 0%);
+          clip-path: polygon(42.5% 7.5%, 32.5% 17.5%, 22.5% 0%);
+}
+
+.container #image1 #right1 {
+  opacity: 0.8 0.5;
+  -webkit-clip-path: polygon(57.5% 7.5%, 67.5% 17.5%, 77.5% 0%);
+          clip-path: polygon(57.5% 7.5%, 67.5% 17.5%, 77.5% 0%);
+}
+
+.container #image1 #left2 {
+  -webkit-clip-path: polygon(22.5% 25%, 32.5% 17.5%, 30% 12%);
+          clip-path: polygon(22.5% 25%, 32.5% 17.5%, 30% 12%);
+}
+
+.container #image1 #right2 {
+  opacity: 0.8;
+  -webkit-clip-path: polygon(77.5% 25%, 67.5% 17.5%, 70% 12%);
+          clip-path: polygon(77.5% 25%, 67.5% 17.5%, 70% 12%);
+}
+
+.container #image1 #left3 {
+  -webkit-clip-path: polygon(22.5% 25%, 30% 12%, 25% 2.5%);
+          clip-path: polygon(22.5% 25%, 30% 12%, 25% 2.5%);
+}
+
+.container #image1 #right3 {
+  opacity: 0.8;
+  -webkit-clip-path: polygon(77.5% 25%, 70% 12%, 75% 2.5%);
+          clip-path: polygon(77.5% 25%, 70% 12%, 75% 2.5%);
+}
+
+.container #image2 {
+  margin-top: 65%;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 1/2/2/3;
+}
+
+.container #image2 .foreHeadR {
+  z-index: 1;
+  background-color: #4ecffa;
+  -webkit-clip-path: polygon(50% 0%, 65% 0%, 87.5% 15%, 95% 55%, 85% 80%, 50% 62.5%);
+          clip-path: polygon(50% 0%, 65% 0%, 87.5% 15%, 95% 55%, 85% 80%, 50% 62.5%);
+}
+
+.container #image2 .foreHeadL {
+  z-index: 1;
+  background-color: #2ba6cf;
+  -webkit-clip-path: polygon(50% 0%, 35% 0%, 12.5% 15%, 5% 55%, 15% 80%, 50% 62.5%);
+          clip-path: polygon(50% 0%, 35% 0%, 12.5% 15%, 5% 55%, 15% 80%, 50% 62.5%);
+}
+
+.container #image2 .nose {
+  background-color: black;
+  z-index: 2;
+  -webkit-clip-path: polygon(42.5% 66.25%, 50% 60%, 57.5% 66.25%, 50% 80%);
+          clip-path: polygon(42.5% 66.25%, 50% 60%, 57.5% 66.25%, 50% 80%);
+}
+
+.container #image2 .noseGrey {
+  background-color: grey;
+  z-index: 2;
+  -webkit-clip-path: polygon(45% 67%, 50% 62.5%, 55% 67%, 50% 65%);
+          clip-path: polygon(45% 67%, 50% 62.5%, 55% 67%, 50% 65%);
+}
+
+.container #image2 .jawL {
+  background-color: #124f77;
+  z-index: 3;
+  -webkit-clip-path: polygon(50% 100%, 15% 80%, 25% 75%);
+          clip-path: polygon(50% 100%, 15% 80%, 25% 75%);
+}
+
+.container #image2 .jawR {
+  opacity: 0.8;
+  z-index: 3;
+  background-color: #124f77;
+  -webkit-clip-path: polygon(50% 100%, 85% 80%, 75% 75%);
+          clip-path: polygon(50% 100%, 85% 80%, 75% 75%);
+}
+
+.container #image2 .cheeksL {
+  z-index: 2;
+  background-color: #cac7c7;
+  -webkit-clip-path: polygon(50% 100%, 50% 80%, 42% 65%, 31% 70%, 27.5% 77.5%);
+          clip-path: polygon(50% 100%, 50% 80%, 42% 65%, 31% 70%, 27.5% 77.5%);
+}
+
+.container #image2 .cheeksR {
+  z-index: 2;
+  background-color: white;
+  -webkit-clip-path: polygon(50% 100%, 50% 80%, 58% 65%, 69% 70%, 72.5% 77.5%);
+          clip-path: polygon(50% 100%, 50% 80%, 58% 65%, 69% 70%, 72.5% 77.5%);
+}
+
+.container #image2 .eyePitL {
+  z-index: 2;
+  background-color: #cebaba;
+  -webkit-clip-path: polygon(10% 50%, 20% 25%, 40% 61%, 42% 65%, 31% 70%, 27.5% 77.5%, 25% 75%);
+          clip-path: polygon(10% 50%, 20% 25%, 40% 61%, 42% 65%, 31% 70%, 27.5% 77.5%, 25% 75%);
+}
+
+.container #image2 .eyePitR {
+  z-index: 2;
+  background-color: #fdeeee;
+  -webkit-clip-path: polygon(90% 50%, 80% 25%, 60% 61%, 58% 65%, 69% 70%, 72.5% 77.5%, 75% 75%);
+          clip-path: polygon(90% 50%, 80% 25%, 60% 61%, 58% 65%, 69% 70%, 72.5% 77.5%, 75% 75%);
+}
+
+.container #image2 .earPitL {
+  z-index: 3;
+  background-color: #594da0;
+  -webkit-clip-path: polygon(40% 61%, 25% 30%, 7.5% 10%, 12.5% 30%);
+          clip-path: polygon(40% 61%, 25% 30%, 7.5% 10%, 12.5% 30%);
+}
+
+.container #image2 .earPitR {
+  z-index: 3;
+  background-color: #594da0;
+  -webkit-clip-path: polygon(60% 61%, 75% 30%, 92.5% 10%, 87.5% 30%);
+          clip-path: polygon(60% 61%, 75% 30%, 92.5% 10%, 87.5% 30%);
+}
+
+.container #image2 .earL {
+  z-index: 3;
+  background-color: #00ccff;
+  -webkit-clip-path: polygon(30% 20%, 25% 30%, 7.5% 10%);
+          clip-path: polygon(30% 20%, 25% 30%, 7.5% 10%);
+}
+
+.container #image2 .earR {
+  z-index: 3;
+  background-color: #04a2ca;
+  -webkit-clip-path: polygon(70% 20%, 75% 30%, 92.5% 10%);
+          clip-path: polygon(70% 20%, 75% 30%, 92.5% 10%);
+}
+
+.container #image2 .pupilL {
+  z-index: 2;
+  background-color: black;
+  -webkit-clip-path: circle(7.5% at 30% 50%);
+          clip-path: circle(7.5% at 30% 50%);
+}
+
+.container #image2 .pupilR {
+  z-index: 2;
+  background-color: black;
+  -webkit-clip-path: circle(7.5% at 70% 50%);
+          clip-path: circle(7.5% at 70% 50%);
+}
+
+.container #image2 .eyeL {
+  z-index: 2;
+  background-color: #ffd000;
+  -webkit-clip-path: circle(10% at 70% 50%);
+          clip-path: circle(10% at 70% 50%);
+}
+
+.container #image2 .eyeR {
+  z-index: 2;
+  background-color: #ffd000;
+  -webkit-clip-path: circle(10% at 30% 50%);
+          clip-path: circle(10% at 30% 50%);
+}
+
+.container #image2 .eyeBorderL {
+  z-index: 2;
+  background-color: black;
+  -webkit-clip-path: circle(11% at 70% 50%);
+          clip-path: circle(11% at 70% 50%);
+}
+
+.container #image2 .eyeBorderR {
+  z-index: 2;
+  background-color: black;
+  -webkit-clip-path: circle(11% at 30% 50%);
+          clip-path: circle(11% at 30% 50%);
+}
+
+.container #image2 .maskEyeL {
+  z-index: 3;
+  background-color: #2ba6cf;
+  -webkit-clip-path: polygon(42.5% 66.25%, 50% 60%, 30% 20%, 25% 30%);
+          clip-path: polygon(42.5% 66.25%, 50% 60%, 30% 20%, 25% 30%);
+}
+
+.container #image2 .maskEyeR {
+  z-index: 3;
+  background-color: #4ecffa;
+  -webkit-clip-path: polygon(57.5% 66.25%, 50% 60%, 70% 20%, 75% 30%);
+          clip-path: polygon(57.5% 66.25%, 50% 60%, 70% 20%, 75% 30%);
+}
+/*# sourceMappingURL=style.css.map */

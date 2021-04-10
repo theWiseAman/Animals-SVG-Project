@@ -1,0 +1,314 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+h1 {
+  font-family: "Nunito" sans-serif;
+  text-decoration: underline;
+}
+.container {
+  background-color: purple;
+  width: 700px;
+  height: 500px;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 1em;
+  grid-column-gap: 1em;
+  padding: 1em;
+
+  .inner {
+    background: pink;
+    padding: 1em;
+    border-radius: 10px;
+    width: calc(100% - 3em);
+    height: 50%;
+    justify-content: center;
+
+    .baseTile {
+      border: black solid 1px;
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      cursor: pointer;
+
+      div {
+        height: 100%;
+        width: 100%;
+        grid-area: 1/1/2/2;
+      }
+    }
+  }
+  #image1 {
+    grid-area: 1/1/2/2;
+
+    .cheeks {
+      background-color: lightyellow;
+    }
+    #L {
+      clip-path: polygon(45% 95%, 5% 50%, 25% 45%);
+    }
+    #R {
+      clip-path: polygon(95% 50%, 75% 45%, 55% 95%);
+    }
+
+    .tongueL {
+      background-color: red;
+      clip-path: polygon(47.5% 95%, 50% 95%, 50% 100%);
+    }
+    .tongueR {
+      background-color: red;
+      opacity: 0.7;
+      clip-path: polygon(52.5% 95%, 50% 95%, 50% 100%);
+    }
+    .nose {
+      background-color: black;
+      clip-path: polygon(45% 95%, 55% 95%, 50% 85%);
+    }
+
+    .yellow {
+      background-color: rgb(247, 247, 144);
+    }
+    #one {
+      clip-path: polygon(45% 95%, 50% 85%, 25% 45%);
+    }
+    #two {
+      clip-path: polygon(55% 95%, 50% 85%, 75% 45%);
+    }
+    #three {
+      clip-path: polygon(95% 50%, 77.5% 25%, 75% 45%);
+    }
+    #four {
+      clip-path: polygon(5% 50%, 22.5% 25%, 25% 45%);
+    }
+
+    .brown {
+      background-color: brown;
+    }
+    #left {
+      clip-path: polygon(50% 55%, 37.5% 65%, 25% 45%);
+    }
+    #right {
+      clip-path: polygon(50% 55%, 62.5% 65%, 75% 45%);
+    }
+
+    .noseBaseL {
+      background-color: red;
+      clip-path: polygon(50% 55%, 37.5% 65%, 50% 85%);
+    }
+    .noseBaseR {
+      background-color: orange;
+      clip-path: polygon(50% 55%, 62.5% 65%, 50% 85%);
+    }
+
+    .foreHeadL {
+      background-color: rgb(160, 27, 27);
+      clip-path: polygon(
+        50% 55%,
+        50% 7.5%,
+        42.5% 7.5%,
+        32.5% 17.5%,
+        22.5% 25%,
+        25% 45%
+      );
+    }
+    .foreHeadR {
+      background-color: brown;
+      opacity: 0.8;
+      clip-path: polygon(
+        50% 55%,
+        50% 7.5%,
+        57.5% 7.5%,
+        67.5% 17.5%,
+        77.5% 25%,
+        75% 45%
+      );
+    }
+    .earOne {
+      background-color: orangered;
+      z-index: 10;
+    }
+    .earTwo {
+      background-color: maroon;
+      z-index: 2;
+    }
+    .earThree {
+      background-color: rgb(253, 101, 45);
+      z-index: 5;
+    }
+    #left1 {
+      clip-path: polygon(42.5% 7.5%, 32.5% 17.5%, 22.5% 0%);
+    }
+    #right1 {
+      opacity: 0.8.5;
+      clip-path: polygon(57.5% 7.5%, 67.5% 17.5%, 77.5% 0%);
+    }
+    #left2 {
+      clip-path: polygon(22.5% 25%, 32.5% 17.5%, 30% 12%);
+    }
+    #right2 {
+      opacity: 0.8;
+      clip-path: polygon(77.5% 25%, 67.5% 17.5%, 70% 12%);
+    }
+    #left3 {
+      clip-path: polygon(22.5% 25%, 30% 12%, 25% 2.5%);
+    }
+    #right3 {
+      opacity: 0.8;
+      clip-path: polygon(77.5% 25%, 70% 12%, 75% 2.5%);
+    }
+  }
+  #image2 {
+    margin-top: 65%;
+    grid-area: 1/2/2/3;
+
+    .foreHeadR {
+      z-index: 1;
+      background-color: rgb(78, 207, 250);
+      clip-path: polygon(
+        50% 0%,
+        65% 0%,
+        87.5% 15%,
+        95% 55%,
+        85% 80%,
+        50% 62.5%
+      );
+    }
+    .foreHeadL {
+      z-index: 1;
+      background-color: rgb(43, 166, 207);
+      clip-path: polygon(50% 0%, 35% 0%, 12.5% 15%, 5% 55%, 15% 80%, 50% 62.5%);
+    }
+
+    .nose {
+      background-color: black;
+      z-index: 2;
+      clip-path: polygon(42.5% 66.25%, 50% 60%, 57.5% 66.25%, 50% 80%);
+    }
+    .noseGrey {
+      background-color: grey;
+      z-index: 2;
+      clip-path: polygon(45% 67%, 50% 62.5%, 55% 67%, 50% 65%);
+    }
+
+    .jawL {
+      background-color: rgb(18, 79, 119);
+      z-index: 3;
+      clip-path: polygon(50% 100%, 15% 80%, 25% 75%);
+    }
+    .jawR {
+      opacity: 0.8;
+      z-index: 3;
+      background-color: rgb(18, 79, 119);
+      clip-path: polygon(50% 100%, 85% 80%, 75% 75%);
+    }
+
+    .cheeksL {
+      z-index: 2;
+      background-color: rgb(202, 199, 199);
+      clip-path: polygon(50% 100%, 50% 80%, 42% 65%, 31% 70%, 27.5% 77.5%);
+    }
+    .cheeksR {
+      z-index: 2;
+      background-color: white;
+      clip-path: polygon(50% 100%, 50% 80%, 58% 65%, 69% 70%, 72.5% 77.5%);
+    }
+
+    .eyePitL {
+      z-index: 2;
+      background-color: rgb(206, 186, 186);
+      clip-path: polygon(
+        10% 50%,
+        20% 25%,
+        40% 61%,
+        42% 65%,
+        31% 70%,
+        27.5% 77.5%,
+        25% 75%
+      );
+    }
+    .eyePitR {
+      z-index: 2;
+      background-color: rgb(253, 238, 238);
+      clip-path: polygon(
+        90% 50%,
+        80% 25%,
+        60% 61%,
+        58% 65%,
+        69% 70%,
+        72.5% 77.5%,
+        75% 75%
+      );
+    }
+
+    .earPitL {
+      z-index: 3;
+      background-color: rgb(89, 77, 160);
+      clip-path: polygon(40% 61%, 25% 30%, 7.5% 10%, 12.5% 30%);
+    }
+    .earPitR {
+      z-index: 3;
+      background-color: rgb(89, 77, 160);
+      clip-path: polygon(60% 61%, 75% 30%, 92.5% 10%, 87.5% 30%);
+    }
+    .earL {
+      z-index: 3;
+      background-color: rgb(0, 204, 255);
+      clip-path: polygon(30% 20%, 25% 30%, 7.5% 10%);
+    }
+    .earR {
+      z-index: 3;
+      background-color: rgb(4, 162, 202);
+      clip-path: polygon(70% 20%, 75% 30%, 92.5% 10%);
+    }
+
+    .pupilL {
+      z-index: 2;
+      background-color: black;
+      clip-path: circle(7.5% at 30% 50%);
+    }
+    .pupilR {
+      z-index: 2;
+      background-color: black;
+      clip-path: circle(7.5% at 70% 50%);
+    }
+    .eyeL {
+      z-index: 2;
+      background-color: rgb(255, 208, 0);
+      clip-path: circle(10% at 70% 50%);
+    }
+    .eyeR {
+      z-index: 2;
+      background-color: rgb(255, 208, 0);
+      clip-path: circle(10% at 30% 50%);
+    }
+    .eyeBorderL {
+      z-index: 2;
+      background-color: black;
+      clip-path: circle(11% at 70% 50%);
+    }
+    .eyeBorderR {
+      z-index: 2;
+      background-color: black;
+      clip-path: circle(11% at 30% 50%);
+    }
+    .maskEyeL {
+      z-index: 3;
+      background-color: rgb(43, 166, 207);
+      clip-path: polygon(42.5% 66.25%, 50% 60%, 30% 20%, 25% 30%);
+    }
+    .maskEyeR {
+      z-index: 3;
+      background-color: rgb(78, 207, 250);
+      clip-path: polygon(57.5% 66.25%, 50% 60%, 70% 20%, 75% 30%);
+    }
+  }
+}
